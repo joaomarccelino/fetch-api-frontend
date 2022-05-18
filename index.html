@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <title>Consumo de API</title>
 </head>
@@ -14,26 +17,29 @@
   <div class="apis">
     <div class="random-dog">
       <h2>Cachorro fofo aleatório</h2>
-      <img src="" class="dog-image" width="400" height="400">
+      <img src="./imgs/dog.jpg" class="dog-image" width="300" height="300">
       <button class="dog-btn btn">Cachorro aleatório</button>
     </div>
     <div class="digimon">
       <h2>Digimon</h2>
-      <p class="digi-name"></p>
-      <img src="" alt="" class="digi-img" width="400" height="400">
-      <input type="number" class="digi-number">
+      <p>Nome: <span class="digi-name"></span></p>
+      <img src="./imgs/digimon.jpg" alt="" class="digi-img" width="300" height="300">
+      <label for="digi-number">Digite um número de Digimon:</label>
+      <input type="number" class="digi-number" id="digi-number">
       <button class="digi-btn btn">Get Digimon</button>
     </div>
     <div class="rick">
       <h2>Rick and Morty - Personagens</h2>
-      <img src="" alt="" class="rick-img" width="400" height="400">
-      <p>Nome: <span class="rick-name"></span></p>
+      <img src="./imgs/rickandmorty.jpg" alt="" class="rick-img" width="300" height="300">
+      <p>Name: <span class="rick-name"></span></p>
       <p>Gender: <span class="rick-gender"></span></p>
       <p>Species: <span class="rick-species"></span></p>
-      <input type="number" class="rick-number">
+      <label for="rick-number">Digite um número de Personagem:</label>
+      <input type="number" class="rick-number" id="rick-number">
       <button class="rick-btn btn">Get Rick and Morty</button>
     </div>
   </div>
   <script src="./script.js"></script>
 </body>
+
 </html>

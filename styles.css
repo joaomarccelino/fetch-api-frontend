@@ -1,3 +1,9 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  background-color: #f5b79f;
+}
+
 img, input, button {
   display: block;
 }
@@ -18,14 +24,42 @@ h1 {
   gap: 15px;
   align-items: center;
   background: #ededed;
+  padding: 20px 40px;
+  border-radius: 4px;
 }
 
 .btn {
   padding: 20px;
   text-transform: uppercase;
-  font-weight: bold;
-  background: #ccff00;
+  background: #151515;
+  color: #fff;
   border: none;
   border: 1px solid #151515;
   border-radius: 4px;
+  font: 700 1.125rem/1.1 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 1250px) {
+  .apis {
+    grid-template-columns: 1fr;
+  }
+  .random-dog, .digimon, .rick {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .random-dog, .digimon, .rick {
+    max-width: 300px;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
 }
