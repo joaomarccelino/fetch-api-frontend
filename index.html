@@ -15,6 +15,11 @@
 <body>
   <h1>Consumo de API</h1>
   <div class="apis">
+    <div class="get-user-photo">
+      <img src="" alt="" class="userPhoto" width="200" height="200">
+      <input type="file" accept="image/x-png,image/jpeg,image/gif"/>
+      <button class="btn">Tire sua foto</button>
+    </div>
     <div class="random-dog">
       <h2>Cachorro fofo aleatório</h2>
       <img src="./imgs/dog.jpg" class="dog-image" width="300" height="300">
@@ -22,7 +27,9 @@
     </div>
     <div class="digimon">
       <h2>Digimon</h2>
-      <p>Nome: <span class="digi-name"></span></p>
+      <div class="text-data">
+        <p>Nome: <span class="digi-name"></span></p>
+      </div>
       <img src="./imgs/digimon.jpg" alt="" class="digi-img" width="300" height="300">
       <label for="digi-number">Digite um número de Digimon: <small>(max: 208)</small></label>
       <input type="number" class="digi-number" id="digi-number" max="208" min="1" value=1>
@@ -31,9 +38,15 @@
     <div class="rick">
       <h2>Rick and Morty - Personagens</h2>
       <img src="./imgs/rickandmorty.jpg" alt="" class="rick-img" width="300" height="300">
-      <p>Name: <span class="rick-name"></span></p>
-      <p>Gender: <span class="rick-gender"></span></p>
-      <p>Species: <span class="rick-species"></span></p>
+      <div class="text-data">
+        <p>Name: <span class="rick-name"></span></p>
+      </div>
+      <div class="text-data">
+        <p>Gender: <span class="rick-gender"></span></p>
+      </div>
+      <div class="text-data">
+        <p>Species: <span class="rick-species"></span></p>
+      </div>
       <label for="rick-number">Digite um número de Personagem: <small>(max: 826)</small></label>
       <input type="number" class="rick-number" id="rick-number" max="826" min="1" value=1>
       <button class="rick-btn btn">Get Rick and Morty</button>
@@ -43,3 +56,5 @@
 </body>
 
 </html>
+
+<!-- https://www.simicart.com/blog/pwa-camera-access/ -->
