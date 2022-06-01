@@ -7,6 +7,7 @@ const assets = [
     baseurl+ "styles.css",,
     baseurl+ "js/recordVideo.js",
     baseurl+ "js/app.js",
+    baseurl+ "js/install.js",
     baseurl+ "imgs/icon.png"
 ];
 
