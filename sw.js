@@ -4,7 +4,7 @@ const assets = [
     baseurl,
     baseurl+ "index.html",
     baseurl+ "manifest.json",
-    baseurl+ "styles.css",,
+    baseurl+ "styles.css",
     baseurl+ "js/recordVideo.js",
     baseurl+ "js/app.js",
     baseurl+ "js/install.js",
