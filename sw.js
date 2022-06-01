@@ -7,9 +7,8 @@ const assets = [
     baseurl+ "styles.css",,
     baseurl+ "js/recordVideo.js",
     baseurl+ "js/app.js",
-    baseurl+ "img/icon.png"
+    baseurl+ "imgs/icon.png"
 ];
-
 
 self.addEventListener('install', (e) => {
     console.log('[Service Worker] Install');
