@@ -1,5 +1,5 @@
 const CACHE_NAME = "pwa-joao";
-const baseurl = "http://127.0.0.1:5500/";
+const baseurl = "https://joaomarccelino.github.io/fetch-api-frontend/";
 const assets = [
     baseurl,
     baseurl+ "index.html",
