@@ -1,7 +1,7 @@
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function () {
     navigator.serviceWorker
-      .register("https://joaomarccelino.github.io/fetch-api-frontend/sw.js")
+      .register("http://127.0.0.1:5500/sw.js")
       .then(res => console.log("service worker registered"))
       .catch(err => console.log("service worker not registered", err))
   })
