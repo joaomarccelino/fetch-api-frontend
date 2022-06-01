@@ -1,13 +1,15 @@
 const CACHE_NAME = "pwa-joao";
+const baseurl = "https://joaomarccelino.github.io/fetch-api-frontend/";
 const assets = [
-    "/",
-    "/index.html",
-    "/manifest.json",
-    "/styles.css",
-    "/js/recordVideo.js",
-    "js/install.js",
-    "/js/app.js"
+    baseurl,
+    baseurl+ "index.html",
+    baseurl+ "manifest.json",
+    baseurl+ "styles.css",,
+    baseurl+ "js/recordVideo.js",
+    baseurl+ "js/app.js",
+    baseurl+ "img/icon.png"
 ];
+
 
 self.addEventListener('install', (e) => {
     console.log('[Service Worker] Install');
