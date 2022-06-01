@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="./styles.css">
   <title>Consumo de API</title>
 </head>
@@ -16,9 +17,11 @@
   <h1>Consumo de API</h1>
   <div class="apis">
     <div class="get-user-photo">
-      <img src="" alt="" class="userPhoto" width="200" height="200">
-      <input type="file" accept="image/x-png,image/jpeg,image/gif"/>
-      <button class="btn">Tire sua foto</button>
+      <video autoplay style="height:180px; width: 240px;"
+        poster="https://image.freepik.com/free-icon/video-camera-symbol_318-40225.png"></video>
+      <p><button onclick="getStream()">Gravar vídeo</button></p>
+      <p><button onclick="download()">Download!</button></p>
+      </p>
     </div>
     <div class="random-dog">
       <h2>Cachorro fofo aleatório</h2>
@@ -52,9 +55,8 @@
       <button class="rick-btn btn">Get Rick and Morty</button>
     </div>
   </div>
-  <script src="./script.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/recordVideo.js"></script>
 </body>
 
 </html>
-
-<!-- https://www.simicart.com/blog/pwa-camera-access/ -->

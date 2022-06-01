@@ -1,12 +1,11 @@
 const CACHE_NAME = "pwa-joao";
 const assets = [
     "/",
-    "/index.html",
+    "/app.html",
     "/manifest.json",
     "/styles.css",
-    "/script.js",
-    "/js/quagga.min.js",
-    "js/instalar.js",
+    "/js/recordVideo.js",
+    "js/install.js",
     "/js/app.js"
 ];
 

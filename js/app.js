@@ -1,3 +1,12 @@
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then(res => console.log("service worker registered"))
+      .catch(err => console.log("service worker not registered", err))
+  })
+}
+
 // IMAGENS ALEATÓRIAS DE CÃEZINHOS
 const dogImg = document.querySelector('.dog-image');
 
@@ -21,14 +30,14 @@ const digiName = document.querySelector('.digi-name');
 
 const digiImg = document.querySelector('.digi-img');
 
-function getDigimon() { 
+function getDigimon() {
   const index = digiInput.value;
   fetch('https://digimon-api.vercel.app/api/digimon')
     .then(result => result.json())
     .then(digimon => {
       digiImg.src = digimon[index].img;
       digiName.innerText = digimon[index].name;
-      
+
     })
 }
 
@@ -51,13 +60,13 @@ const rickSpecies = document.querySelector('.rick-species');
 function getRick() {
   const index = rickInput.value;
   fetch(`https://rickandmortyapi.com/api/character/${index}`)
-    .then(result=>result.json())
+    .then(result => result.json())
     .then(rick => {
       rickName.innerText = rick.name;
       rickImg.src = rick.image;
       rickGender.innerText = rick.gender;
       rickSpecies.innerText = rick.species;
-    });    
+    });
 }
 
 
