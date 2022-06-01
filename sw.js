@@ -1,7 +1,7 @@
 const CACHE_NAME = "pwa-joao";
 const assets = [
     "/",
-    "/app.html",
+    "/index.html",
     "/manifest.json",
     "/styles.css",
     "/js/recordVideo.js",
